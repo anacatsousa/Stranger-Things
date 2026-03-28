@@ -6,10 +6,11 @@
   :root, :host {
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-blue-500: oklch(62.3% 0.214 259.815);
+    --color-white: #fff;
     --default-font-family: 'Poppins', sans-serif;
     --default-mono-font-family: var(--font-mono);
     --font-title: 'Title', serif;
+    --color-bg: #0c0102;
   }
 }
 @layer base {
@@ -164,11 +165,14 @@
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
-  .bg-blue-500 {
-    background-color: var(--color-blue-500);
+  .bg-bg {
+    background-color: var(--color-bg);
   }
   .font-title {
     font-family: var(--font-title);
+  }
+  .text-white {
+    color: var(--color-white);
   }
 }
 @font-face {
