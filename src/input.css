@@ -10,6 +10,7 @@
 	--default-font-family: 'Poppins', sans-serif;
 	--font-title: 'Title', serif;
 	--color-bg: #0c0102;
+	--animate-infinite-text: InfiniteText 10s infinite linear;
 }
 
 .gradient::before {
@@ -21,4 +22,10 @@
 	z-index: 2;
 	left: 0;
 	top: 0;
+}
+
+@keyframes InfiniteText {
+	100% {
+		transform: translateX(-100%);
+	}
 }

@@ -34,6 +34,7 @@
     --default-mono-font-family: var(--font-mono);
     --font-title: 'Title', serif;
     --color-bg: #0c0102;
+    --animate-infinite-text: InfiniteText 10s infinite linear;
   }
 }
 @layer base {
@@ -206,9 +207,6 @@
   .z-2 {
     z-index: 2;
   }
-  .z-\[1\] {
-    z-index: 1;
-  }
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
   }
@@ -262,6 +260,9 @@
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .animate-infinite-text {
+    animation: var(--animate-infinite-text);
   }
   .cursor-pointer {
     cursor: pointer;
@@ -615,6 +616,11 @@
   z-index: 2;
   left: 0;
   top: 0;
+}
+@keyframes InfiniteText {
+  100% {
+    transform: translateX(-100%);
+  }
 }
 @property --tw-rotate-x {
   syntax: "*";
