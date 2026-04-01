@@ -11,15 +11,14 @@
 		<div id="smooth-wrapper">
 			<div id="smooth-content">
 				<header class="h-dvh md:h-screen flex flex-col relative gradient z-9">
-					<picture class="absolute top-0 left-0 w-full h-full z-1">
+					<picture class="absolute top-0 left-0 w-full h-full z-1" aria-hidden="true">
 						<source media="(max-width: 1024px)" srcset="/assets/bg-1-mobile.webp" type="image/webp" />
 						<img src="/assets/bg-1.webp" alt="fundo" class="absolute w-full h-full object-cover" />
 					</picture>
-					<picture class="absolute bottom-0 left-0 w-full h-full z-1">
+					<picture class="absolute bottom-0 left-0 w-full h-full z-1" aria-hidden="true">
 						<source media="(max-width: 1024px)" srcset="/assets/bg-2-mobile.webp" type="image/webp" />
 						<img src="/assets/bg-2.webp" alt="personagens" class="absolute w-full h-full object-cover" />
 					</picture>
-
 					<nav class="flex justify-between items-center p-8 relative z-2">
 						<span class="text-3xl font-bold">GC.</span>
 						<img src="/assets/netflix-logo.svg" alt="logo netflix" class="h-6 w-auto" />
@@ -31,7 +30,7 @@
 						</div>
 						<div class="space-y-8 flex flex-col justify-end items-start lg:items-end w-full lg:w-1/3">
 							<p class="text-2xl lg:text-2xl 2xl:text-4xl lg:text-right">Discover your powers and become the hero of your own adventure!</p>
-							<button class="flex gap-2 uppercase border-b pb-2 cursor-pointer">Choose your city <img src="./assets/seta-botao.svg" alt="arrow btn" /></button>
+							<button class="flex gap-2 uppercase border-b pb-2 cursor-pointer" aria-label="Choose your city button">Choose your city <img src="./assets/seta-botao.svg" alt="arrow btn" /></button>
 						</div>
 					</section>
 				</header>
@@ -54,7 +53,7 @@
 								<p class="font-semibold">Yas Island</p>
 								<p class="uppercase text-sm">Tickets available</p>
 							</div>
-							<button class="md:hidden w-full flex justify-between uppercase border-b pb-2 cursor-pointer mt-10">
+							<button class="md:hidden w-full flex justify-between uppercase border-b pb-2 cursor-pointer mt-10" aria-label="Get tickets button">
 								Get tickets <img src="./assets/seta-botao.svg" alt="arrow btn" />
 							</button>
 						</div>
@@ -116,10 +115,10 @@
 							<div class="space-y-5">
 								<h3 class="uppercase">Corporate</h3>
 								<ul>
-									<li>Contact Us</li>
-									<li>Media</li>
-									<li>Partnerships</li>
-									<li>Influencers</li>
+									<li><a href="#">Contact Us</a></li>
+									<li><a href="#">Media</a></li>
+									<li><a href="#">Partnerships</a></li>
+									<li><a href="#">Influencers</a></li>
 								</ul>
 							</div>
 							<div class="space-y-5">
@@ -129,17 +128,17 @@
 							<div class="space-y-5">
 								<h3 class="uppercase">Social media</h3>
 								<ul class="flex gap-4">
-									<li><img src="./assets/footer-facebook.svg" alt="facebook logo" class="w-7 h-7" /></li>
-									<li><img src="./assets//footer-instagram.svg" alt="instagram logo" class="w-7 h-7" /></li>
-									<li><img src="./assets/footer-twitter.svg" alt="twitter logo" class="w-7 h-7" /></li>
+									<li><a href="#"><img src="./assets/footer-facebook.svg" alt="facebook logo" class="w-7 h-7" /></a></li>
+									<li><a href="#"><img src="./assets/footer-instagram.svg" alt="instagram logo" class="w-7 h-7" /></a></li>
+									<li><a href="#"><img src="./assets/footer-twitter.svg" alt="twitter logo" class="w-7 h-7" /></a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
-					<div class="absolute bottom-0 left-0 flex gap-10 whitespace-nowrap">
-						<span class="font-title text-9xl mix-blend-soft-light animate-infinite-text">THE EXPERIENCE</span>
-						<span class="font-title text-9xl mix-blend-soft-light animate-infinite-text">THE EXPERIENCE</span>
-						<span class="font-title text-9xl mix-blend-soft-light animate-infinite-text">THE EXPERIENCE</span>
+					<div class="absolute bottom-0 left-0 flex gap-10 whitespace-nowrap" >
+						<span class="font-title text-9xl mix-blend-soft-light animate-infinite-text" aria-hidden="true">THE EXPERIENCE</span>
+						<span class="font-title text-9xl mix-blend-soft-light animate-infinite-text" aria-hidden="true">THE EXPERIENCE</span>
+						<span class="font-title text-9xl mix-blend-soft-light animate-infinite-text aria-hidden="true"">THE EXPERIENCE</span>
 					</div>
 				</footer>
 			</div>
